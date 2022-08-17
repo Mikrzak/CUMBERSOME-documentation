@@ -1,0 +1,49 @@
+<html>
+   <head> 
+       <meta charset="UTF-8">
+       <title>CUMBERSOME dokumentacja</title>
+   </head>
+   <body>
+       <p style="font-size:100px;">To jest dokumentacja języka CUMBERSOME, którego nazwa jest jedyną rzeczą po angielsku tutaj.</p
+<br><br>
+       <p style="font-size:40px;">Funkcje bez argumentów:</p>
+       <p style="font-size:40px;">ZAKONCZ - konczy program</p>
+       <p style="font-size:40px;">WEJSCIE - pobiera liczbę z klawiatury (może być zmiennoprzecinkowa)</p>
+       <p style="font-size:40px;">PCHAJ - dodaje zmienną na stos</p>
+       <br><br>
+       <p style="font-size:40px;">Istnieją następujące funkcje do modyfikowania zmiennych: USTAW (ustawia wartość zmiennej), DODAJ, ODEJMIJ, DZIEL, MNÓŻ, RESZTAZDZIELENIA, PODŁOGA (zaokrągla w dół)</p>
+       <p style="font-size:40px;">Dodając do tych zmiennych bezpośrednio następujące słowa możemy zmienić ich funkcjonowanie:</p>
+       <p style="font-size:40px;">ZMIENNA - np. DODAJ-0-1 dodaje do zmiennej o indeksie 0 wartość 1, a DODAJZMIENNA-0-1 dodaje do zmiennej o indeksie 0 wartość zmiennej o indeksie 1</p>
+       <p style="font-size:40px;">WSKAZ - np. DODAJZWSKAZ-0-1 dodaje do zmiennej wskazywanej przez wartość zmiennej o indeksie 0 wartość 1</p>
+       <p style="font-size:40px;">WSKAZZMIENNA - np. DODAJZWSKAZZMIENNA-0-1 dodaje do zmiennej wskazywanej przez wartość zmiennej o indeksie 0 wartość zmiennej o indeksie 1</p>
+       <br><br>
+       
+<p style="font-size:40px;">ETYKIETA-x: Miejsce, w które może zostać wykonany skok, np. ETYKIETA -0</p
+       <br><br>
+        <p style="font-size:40px;">Instrukcje skoku:</p>
+        <p style="font-size:40px;">SKACZ-x: skacze bezwarunkowo do etykiety numer x, np. SKACZ-0</p>
+        <p style="font-size:40px;">SKACZZERO-x-y: skacze do etykiety numer x jeżeli wartość zmiennej o indeksie y wynosi 0, np. SKACZZERO-0-1</p>
+        <p style="font-size:40px;">SKACZZEROWSKAZ-x-y: skacze do etykiety numer x jeżeli wartość zmiennej wskazywanej przez
+wartość zmiennej o indeksie y wynosi 0, np. SKACZZEROWSKAZ-0-1</p
+
+<p style="font-size:40px;">SKACZWIECEJNIZZERO-x-y: skacze do etykiety numer x jeżeli wartość zmiennej o indeksie y wynosi więcej niż 0, np. SKACZWIECEJNIZZERO-0-1</p
+
+<p style="font-size:40px;">SKACZWIECEJNIZZEROWSKAZ-x-y: skacze do etykiety numer x jeżeli wartość zmiennej wskazywanej przez wartość zmiennej o indeksie y wynosi więcej niż 0, np. SKACZWIECEJNIZZEROWSKAZ-0-1</p
+<br><br>
+
+<p style="font-size:40px;">Wyświetlanie zmiennych: (do tych funkcji oprócz WYSWIETLTEKST można też dodać WSKAZ, działa to tak samo jak w poprzednich funkcjach)</p
+<p style="font-size:40px;">WYSWIETL-x: Wyświetla wartość zmiennej o indeksie x, np. WYSWIETL-0</p
+<p style="font-size:40px;">WYSWIETLZNAK-x: Wyświetla wartość zmiennej o indeksie x jako znak ASCII o indeksie wartości tej zmiennej, np. WYSWIETLZNAK-0</p
+<p style="font-size:40px;">WYSWIETLTEKST-x: Wyświetla podaną wartość x jako tekst, np. WYSWIETLTEKST-abc, wyjście: abc</p
+   <br><br>
+   <p style="font-size:40px;">Funkcja RESZTAZDZIELENIA zaokrągla w dół wartości zmiennych, przykładowy program:
+   PCHAJ PCHAJ
+   USTAW-0-10.9   USTAW-1-5.4
+   RESZTAZDZIELENIAZMIENNA-0-1
+   WYSWIETL-0
+   ZAKONCZ
+Wyjście: 0 (10 % 5 = 0)
+   </p
+
+   </body>
+</html>
